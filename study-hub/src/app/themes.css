@@ -1,0 +1,339 @@
+/* =========================================================
+   테마 토큰
+   html[data-theme="..."] 값만 바꾸면 사이트 전체 분위기가 바뀌어요.
+   ========================================================= */
+
+/* ---------- 1. 세이지 (기본값: 오프화이트 + 초록, 이중 테두리 카드) ---------- */
+:root,
+[data-theme="sage"] {
+  --bg: #f6f5f1;
+  --surface: #ffffff;
+  --surface-2: #efeee9;
+  --surface-hover: #e6e5df;
+  --ink: #1d1d1b;
+  --ink-2: #57564f;
+  --ink-3: #7a786f;
+  --line: rgba(29, 29, 27, 0.08);
+  --line-strong: rgba(29, 29, 27, 0.16);
+  --accent: #2f6f4f;
+  --accent-soft: #e3efe7;
+  --on-accent: #ffffff;
+  --primary: #1d1d1b;
+  --on-primary: #ffffff;
+  --nav-bg: rgba(255, 255, 255, 0.82);
+  --danger: #b4432f;
+  --danger-soft: #fbeceb;
+  --warn: #9a4d17;
+  --warn-soft: #fdf0e6;
+
+  --heat-0: #efeee9;
+  --heat-1: #b9dcc6;
+  --heat-2: #6fb08a;
+  --heat-3: #2f6f4f;
+
+  --lang-c: #e7eefb;       --lang-c-ink: #2b56a8;
+  --lang-java: #fbeee3;    --lang-java-ink: #9a4d17;
+  --lang-sql: #e3f3f1;     --lang-sql-ink: #1d6b61;
+  --lang-python: #f6f1dc;  --lang-python-ink: #6f5b0f;
+  --lang-web: #f1e8f7;     --lang-web-ink: #7a3d9c;
+
+  --r-card: 1.5rem;
+  --r-box: 1rem;
+  --r-pill: 999px;
+  --shadow: 0 1px 2px rgba(29, 29, 27, 0.03), 0 8px 30px -12px rgba(29, 29, 27, 0.1);
+  --card-border: 1px solid rgba(29, 29, 27, 0.05);
+  --bezel-pad: 0.375rem;
+  --bezel-bg: rgba(29, 29, 27, 0.03);
+  --bezel-ring: rgba(29, 29, 27, 0.04);
+
+  --heading-font: var(--font-sans);
+  --heading-weight: 700;
+
+  --code-bg: #f7f7f5;
+  --code-ink: #24292f;
+  --code-comment: #6e7781;
+  --code-keyword: #cf222e;
+  --code-string: #0a3069;
+  --code-number: #0550ae;
+  --code-func: #8250df;
+  --code-type: #953800;
+}
+
+/* ---------- 2. 노트 (Notion 계열: 흰 캔버스, 보라 포인트, 파스텔 태그) ---------- */
+[data-theme="notion"] {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f6f5f4;
+  --surface-hover: #efeeec;
+  --ink: #1a1a1a;
+  --ink-2: #5d5b54;
+  --ink-3: #78766f;
+  --line: #ebe8e4;
+  --line-strong: #c8c4be;
+  --accent: #5645d4;
+  --accent-soft: #eeebfc;
+  --on-accent: #ffffff;
+  --primary: #5645d4;
+  --on-primary: #ffffff;
+  --nav-bg: rgba(255, 255, 255, 0.9);
+  --danger: #c4332b;
+  --danger-soft: #fdecea;
+  --warn: #a14a00;
+  --warn-soft: #ffe8d4;
+
+  --heat-0: #f0eeec;
+  --heat-1: #d6cff7;
+  --heat-2: #9a8cec;
+  --heat-3: #5645d4;
+
+  --lang-c: #dcecfa;       --lang-c-ink: #0b5394;
+  --lang-java: #ffe8d4;    --lang-java-ink: #8a3c00;
+  --lang-sql: #d9f3e1;     --lang-sql-ink: #13672a;
+  --lang-python: #fef7d6;  --lang-python-ink: #6b5400;
+  --lang-web: #fde0ec;     --lang-web-ink: #a02e6d;
+
+  --r-card: 0.75rem;
+  --r-box: 0.5rem;
+  --r-pill: 0.5rem;
+  --shadow: 0 1px 2px rgba(15, 15, 15, 0.04);
+  --card-border: 1px solid #ebe8e4;
+  --bezel-pad: 0px;
+  --bezel-bg: transparent;
+  --bezel-ring: transparent;
+
+  --heading-font: var(--font-sans);
+  --heading-weight: 700;
+
+  --code-bg: #f7f6f3;
+  --code-ink: #37352f;
+  --code-comment: #8f8b84;
+  --code-keyword: #b5306c;
+  --code-string: #2b7a3d;
+  --code-number: #b85c00;
+  --code-func: #5645d4;
+  --code-type: #0b6e99;
+}
+
+/* ---------- 3. 종이 (Claude 계열: 크림 종이, 테라코타, 명조 제목) ---------- */
+[data-theme="paper"] {
+  --bg: #faf9f5;
+  --surface: #fffdf8;
+  --surface-2: #f2ede4;
+  --surface-hover: #e9e2d6;
+  --ink: #141413;
+  --ink-2: #4a4945;
+  --ink-3: #6c6a64;
+  --line: #e6dfd8;
+  --line-strong: #d3c9bd;
+  --accent: #a9583e;
+  --accent-soft: #f6e6dd;
+  --on-accent: #ffffff;
+  --primary: #141413;
+  --on-primary: #faf9f5;
+  --nav-bg: rgba(250, 249, 245, 0.88);
+  --danger: #b03a3a;
+  --danger-soft: #f8e4e1;
+  --warn: #8a5a00;
+  --warn-soft: #f7ecd2;
+
+  --heat-0: #ede6da;
+  --heat-1: #ebc2ae;
+  --heat-2: #d68f71;
+  --heat-3: #a9583e;
+
+  --lang-c: #e3e9f2;       --lang-c-ink: #34507a;
+  --lang-java: #f6e2d6;    --lang-java-ink: #8c4026;
+  --lang-sql: #dfece6;     --lang-sql-ink: #2f6450;
+  --lang-python: #f3ead0;  --lang-python-ink: #6c5512;
+  --lang-web: #ece2ee;     --lang-web-ink: #6e3f78;
+
+  --r-card: 1.125rem;
+  --r-box: 0.75rem;
+  --r-pill: 0.625rem;
+  --shadow: 0 1px 0 rgba(20, 20, 19, 0.04);
+  --card-border: 1px solid #e6dfd8;
+  --bezel-pad: 0px;
+  --bezel-bg: transparent;
+  --bezel-ring: transparent;
+
+  --heading-font: "Noto Serif KR", "Nanum Myeongjo", serif;
+  --heading-weight: 600;
+
+  --code-bg: #f5f0e8;
+  --code-ink: #3d3d3a;
+  --code-comment: #8e8b82;
+  --code-keyword: #a9583e;
+  --code-string: #3f7a5f;
+  --code-number: #9a6a00;
+  --code-func: #5b4a8a;
+  --code-type: #2f5f86;
+}
+
+/* ---------- 4. 미드나잇 (Linear 계열: 다크, 라벤더, 헤어라인) ---------- */
+[data-theme="midnight"] {
+  color-scheme: dark;
+  --bg: #08090a;
+  --surface: #0f1011;
+  --surface-2: #18191a;
+  --surface-hover: #202124;
+  --ink: #f7f8f8;
+  --ink-2: #c3c8d2;
+  --ink-3: #8a8f98;
+  --line: #23252a;
+  --line-strong: #34343a;
+  --accent: #8f99f0;
+  --accent-soft: rgba(94, 106, 210, 0.18);
+  --on-accent: #08090a;
+  --primary: #5e6ad2;
+  --on-primary: #ffffff;
+  --nav-bg: rgba(15, 16, 17, 0.82);
+  --danger: #f2827a;
+  --danger-soft: rgba(242, 130, 122, 0.12);
+  --warn: #f0b46a;
+  --warn-soft: rgba(240, 180, 106, 0.12);
+
+  --heat-0: #18191a;
+  --heat-1: #2e3363;
+  --heat-2: #4a54a8;
+  --heat-3: #8f99f0;
+
+  --lang-c: rgba(96, 150, 240, 0.14);     --lang-c-ink: #8db6f7;
+  --lang-java: rgba(240, 150, 90, 0.14);  --lang-java-ink: #f2ad7c;
+  --lang-sql: rgba(80, 200, 170, 0.14);   --lang-sql-ink: #7fd8bf;
+  --lang-python: rgba(230, 200, 90, 0.14); --lang-python-ink: #e8cf7a;
+  --lang-web: rgba(190, 130, 240, 0.14);  --lang-web-ink: #cfa2f5;
+
+  --r-card: 0.75rem;
+  --r-box: 0.5rem;
+  --r-pill: 0.5rem;
+  --shadow: none;
+  --card-border: 1px solid #23252a;
+  --bezel-pad: 0px;
+  --bezel-bg: transparent;
+  --bezel-ring: transparent;
+
+  --heading-font: var(--font-sans);
+  --heading-weight: 600;
+
+  --code-bg: #0b0c0d;
+  --code-ink: #d0d6e0;
+  --code-comment: #6b7079;
+  --code-keyword: #c792ea;
+  --code-string: #a5d6a7;
+  --code-number: #f2ad7c;
+  --code-func: #8db6f7;
+  --code-type: #7fd8bf;
+}
+
+/* ---------- 5. 클린 블루 (토스 느낌: 회색 바탕, 큰 글씨, 파란 버튼) ---------- */
+[data-theme="blue"] {
+  --bg: #f2f4f6;
+  --surface: #ffffff;
+  --surface-2: #f2f4f6;
+  --surface-hover: #e5e8eb;
+  --ink: #191f28;
+  --ink-2: #4e5968;
+  --ink-3: #6b7684;
+  --line: #e5e8eb;
+  --line-strong: #d1d6db;
+  --accent: #1b64da;
+  --accent-soft: #e8f3ff;
+  --on-accent: #ffffff;
+  --primary: #3182f6;
+  --on-primary: #ffffff;
+  --nav-bg: rgba(255, 255, 255, 0.9);
+  --danger: #e42939;
+  --danger-soft: #ffeeee;
+  --warn: #c25e00;
+  --warn-soft: #fff3e0;
+
+  --heat-0: #e5e8eb;
+  --heat-1: #b4d4fb;
+  --heat-2: #64a8ff;
+  --heat-3: #1b64da;
+
+  --lang-c: #e8f3ff;       --lang-c-ink: #1957c2;
+  --lang-java: #fff3e0;    --lang-java-ink: #b34d00;
+  --lang-sql: #e5f7ef;     --lang-sql-ink: #027648;
+  --lang-python: #fff9e7;  --lang-python-ink: #8a6100;
+  --lang-web: #f3edfd;     --lang-web-ink: #6c35c9;
+
+  --r-card: 1.25rem;
+  --r-box: 0.875rem;
+  --r-pill: 0.875rem;
+  --shadow: none;
+  --card-border: 0 solid transparent;
+  --bezel-pad: 0px;
+  --bezel-bg: transparent;
+  --bezel-ring: transparent;
+
+  --heading-font: var(--font-sans);
+  --heading-weight: 700;
+  --tracking: -0.02em;
+
+  --code-bg: #f9fafb;
+  --code-ink: #333d4b;
+  --code-comment: #8b95a1;
+  --code-keyword: #d22030;
+  --code-string: #027648;
+  --code-number: #b34d00;
+  --code-func: #1b64da;
+  --code-type: #6c35c9;
+}
+
+/* ---------- 6. 말랑 (학습앱 느낌: 굵은 테두리, 입체 버튼, 밝은 초록) ---------- */
+[data-theme="play"] {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f4f4f4;
+  --surface-hover: #ebebeb;
+  --ink: #3c3c3c;
+  --ink-2: #4b4b4b;
+  --ink-3: #737373;
+  --line: #e5e5e5;
+  --line-strong: #cfcfcf;
+  --accent: #2b7d08;
+  --accent-soft: #e5f8d4;
+  --on-accent: #ffffff;
+  --primary: #2f8a0a;
+  --on-primary: #ffffff;
+  --btn-edge: 0 4px 0 #1f6105;
+  --btn-press: 2px;
+  --nav-bg: rgba(255, 255, 255, 0.94);
+  --danger: #d43c3c;
+  --danger-soft: #ffe5e5;
+  --warn: #b35c00;
+  --warn-soft: #fff1d6;
+
+  --heat-0: #ececec;
+  --heat-1: #c4ef9a;
+  --heat-2: #7ccf2c;
+  --heat-3: #2f8a0a;
+
+  --lang-c: #ddf4ff;       --lang-c-ink: #0a6fa8;
+  --lang-java: #ffefd9;    --lang-java-ink: #a34f00;
+  --lang-sql: #e5f8d4;     --lang-sql-ink: #2b7d08;
+  --lang-python: #fff6cc;  --lang-python-ink: #7f6200;
+  --lang-web: #f6e5ff;     --lang-web-ink: #8a35c2;
+
+  --r-card: 1rem;
+  --r-box: 0.875rem;
+  --r-pill: 0.875rem;
+  --shadow: 0 2px 0 #e5e5e5;
+  --card-border: 2px solid #e5e5e5;
+  --bezel-pad: 0px;
+  --bezel-bg: transparent;
+  --bezel-ring: transparent;
+
+  --heading-font: var(--font-sans);
+  --heading-weight: 800;
+
+  --code-bg: #f7f7f7;
+  --code-ink: #3c3c3c;
+  --code-comment: #8a8a8a;
+  --code-keyword: #c2185b;
+  --code-string: #2b7d08;
+  --code-number: #a34f00;
+  --code-func: #0a6fa8;
+  --code-type: #8a35c2;
+}
