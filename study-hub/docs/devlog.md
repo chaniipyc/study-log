@@ -54,6 +54,9 @@
 - **git 저장소 시작**: `C:\Code study`를 루트로 `main` 브랜치를 만들고 첫 커밋을 남겼어요.
   - 커밋 이메일은 GitHub의 noreply 주소를 써서, 공개 저장소에서도 개인 이메일이 노출되지 않게 했어요.
   - `.gitattributes`로 줄바꿈을 LF로 통일하고, `.env.example`만 커밋되게 했어요. 실제 키가 들어가는 `.env.local`은 제외돼요.
+- **GitHub 공개 저장소**로 올렸어요: https://github.com/chaniipyc/study-log
+  - 올리기 전에 추적 파일 전체에서 개인정보와 비밀 값이 없는지 검색했어요.
+  - 저장소 첫 화면용 소개 README를 추가했어요.
 
 **다음 할 일**
 - Supabase 프로젝트와 GitHub·Google OAuth 연결 (함께 진행 예정)
